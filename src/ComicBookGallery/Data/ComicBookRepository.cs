@@ -8,22 +8,23 @@ namespace ComicBookGallery.Data
 {
 	public class ComicBookRepository
 	{
-		private static ComicBook[] _comicBooks = new ComicBook[]
-		{
-		    new ComicBook()
-		    {
-			    SeriesTitle = "The Amazing Spider-Man",
-			    IssueNumber = 700,
-			    DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>",
-			    Artists = new Artist[]
-			    {
-				    new Artist() { Name = "Dan Slott", Role = "Script" },
-				    new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
-				    new Artist() { Name = "Victor Olazaba", Role = "Inks" },
-				    new Artist() { Name = "Edgar Delgado", Role = "Colors" },
-				    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
-			    },
-			    Favorite = false
+        private static ComicBook[] _comicBooks = new ComicBook[]
+        {
+            new ComicBook()
+            {
+                SeriesTitle = "The Amazing Spider-Man",
+                IssueNumber = 700,
+                DescriptionHtml = "<p>Final issue! Witness the final hours of Doctor Octopus' life and his one, last, great act of revenge! Even if Spider-Man survives...<strong>will Peter Parker?</strong></p>",
+                Artists = new Artist[]
+                {
+                    new Artist() { Name = "Dan Slott", Role = "Script" },
+                    new Artist() { Name = "Humberto Ramos", Role = "Pencils" },
+                    new Artist() { Name = "Victor Olazaba", Role = "Inks" },
+                    new Artist() { Name = "Edgar Delgado", Role = "Colors" },
+                    new Artist() { Name = "Chris Eliopoulos", Role = "Letters" },
+                },
+                Favorite = false,
+                Id = 1
 		    },
 		    new ComicBook()
 		    {
@@ -38,8 +39,9 @@ namespace ComicBookGallery.Data
 				    new Artist() { Name = "Muntsa Vicente", Role = "Colors" },
 				    new Artist() { Name = "Joe Caramagna", Role = "Letters" }
 			    },
-			    Favorite = false
-		    },
+			    Favorite = false,
+                Id = 2
+            },
 		    new ComicBook()
 		    {
 			    SeriesTitle = "Bone",
@@ -52,8 +54,9 @@ namespace ComicBookGallery.Data
 				    new Artist() { Name = "Jeff Smith", Role = "Inks" },
 				    new Artist() { Name = "Jeff Smith", Role = "Letters" }
 			    },
-			    Favorite = false
-		    }
+			    Favorite = false,
+                Id = 3
+            }
 	    };
 
 		public ComicBook GetComicBook(int id)
